@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nanakar Gold</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="build/tailwind.css" />
+  </head>
+  <body class="">
+    <div class="h-full min-h-screen">
+      <div class="flex flex-col min-h-screen">
+        <header
+          class="sticky top-0 w-full transiton-all duration-100 ease-out backdrop-blur-2xl blur-0 opacity-100 py-1 md:py-0"
+        >
+          <nav
+            class="flex md:justify-between p-1 md:items-center md:max-w-7xl md:mx-auto items-center justify-between"
+          >
+            <!-- menu -->
+            <div
+              id="menu"
+              class="md:hidden transition-all duration-600 ease-in-out"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-7 h-7"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+                />
+              </svg>
+            </div>
+            <!-- link items -->
+            <div
+              id="sidebar"
+              class="translate-x-full z-50 md:w-fit md:translate-x-0 md:flex-row absolute md:relative md:h-auto w-[280px] h-screen md:items-center duration-600 ease-in-out top-0 right-0 md:bg-transparent text-navlinks flex bg-white items-center text-right flex-col"
+            >
+              <div
+                class="flex md:hidden w-full bg-white items-center flex-row justify-between py-8 px-4"
+              >
+                <a href="#">
+                  <p class="font-bold font-sans text-lg">
+                    Nanakar<span class="text-yellow-500">gold</span>
+                  </p></a
+                >
+                <a class="close-menu" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="w-full h-[1px] md:hidden bg-slate-300"></div>
+              <!-- links -->
+              <div class="w-full md:w-auto whitespace-nowrap">
+                <ul
+                  class="w-full overflow-y-auto justify-around flex flex-col md:gap-x-6 md:mt-0 py-4 px-5 md:p-0 md:flex-row md:flex text-right"
+                >
+                  <li class="mr-3 md:mr-0 md:hidden">
+                    <a
+                      href="#"
+                      class="hover:cursor-pointer w-full hover:text-yellow-500 flex gap-[6px] py-4"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                        />
+                      </svg>
+                      خانه
+                    </a>
+                  </li>
+                  <li class="mr-3 md:mr-0">
+                    <a
+                      href="#"
+                      class="hover:cursor-pointer w-full hover:text-yellow-500 flex gap-[6px] py-4"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605"
+                        />
+                      </svg>
+
+                      تابلو
+                    </a>
+                  </li>
+                  <li class="mr-3 md:mr-0">
+                    <a href="#"> </a>
+                    <a
+                      href="#"
+                      class="hover:cursor-pointer w-full hover:text-yellow-500 flex gap-[6px] py-4"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                        />
+                      </svg>
+                      محصولات</a
+                    >
+                  </li>
+                  <li class="mr-3 md:mr-0">
+                    <a
+                      href="#about-me"
+                      class="hover:cursor-pointer w-full hover:text-yellow-500 flex gap-[6px] py-4"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                        />
+                      </svg>
+                      درباره من</a
+                    >
+                  </li>
+                  <li class="mr-3 md:mr-0">
+                    <a
+                      href="#"
+                      class="hover:cursor-pointer w-full hover:text-yellow-500 flex gap-[6px] py-4"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+                        />
+                      </svg>
+                      ارتباط با ما</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- logo -->
+            <div class="w-12 md:w-16 md:order-first">
+              <img class="" src="../assets/images/mainlogo.png" alt="Logo" />
+            </div>
+
+            <!-- desktop Brand name -->
+            <div class="hidden md:flex whitespace-nowrap font-sans font-bold">
+              <a href="#">
+                <p class="font-bold font-sans text-2xl">
+                  Nanakar <span class="text-yellow-500">gold</span>
+                </p></a
+              >
+            </div>
+          </nav>
+          <!-- backdrop -->
+          <div
+            id="backdrop"
+            class="w-screen top-0 bottom-0 hidden md:hidden fixed h-screen z-20 bg-black opacity-30"
+          ></div>
+        </header>
+
+        <!-- main site -->
+        <main
+          class="main flex flex-col items-center p-0 md:p-6 max-w-6xl mx-auto"
+        >
+          <!-- hero section -->
+          <section class="md:mt-12 md:mb-20 mb-16 flex flex-col md:flex-row">
+            <!-- slogan section -->
+            <div
+              class="md:w-2/4 w-full flex flex-col md:flex-col text-center md:text-right justify-center gap-7"
+            >
+              <div
+                class="text-center md:text-right w-fit flex flex-col mx-auto"
+              >
+                <h1
+                  class="font-extrabold text-sloganPrimary mb-2 md:mb-6 sm:text-[30px] md:text-[38px] md:flex-nowrap lg:text-[50px] leading-snug"
+                >
+                  با کمتر از یک میلیون<br />هم می شود طلا خرید
+                </h1>
+                <p
+                  class="text-gray-400 mb-2 text-[12px] font-medium sm:text-[14px] md:text-[16px] md:flex-nowrap"
+                >
+                  انواع طلا کم اجرت و سکه مخصوصا
+                  <span class="text-yellow-400">پارسیان</span> رو<br />
+                  همین الان ازینجا میتونی سفارش بدی :)
+                </p>
+                <!-- underline -->
+                <div
+                  class="max-w-screen-sm h-0.5 bg-[#BEC1F333] mb-4 md:mt-2 md:mb-5"
+                ></div>
+
+                <div
+                  class="md:flex h-16 flex md:flex-row flex-col items-center justify-between md:justify-normal md:mb-4 md:gap-4"
+                >
+                  <p
+                    class="font-medium text-center text-sloganPrimary block text-[12px] md:text-lg md:text-right"
+                  >
+                    میخوای بببینی؟
+                  </p>
+                  <button
+                    class="border-2 border-yellow-600 rounded-lg md:text-xl text-[16px] px-2 py-1 md:px-3 md:py-2 text-yellow-400 cursor-pointer hover:bg-yellow-600 hover:text-yellow-200"
+                  >
+                    <a href="#">بزن رو دکمه</a>
+                  </button>
+                </div>
+
+                <!-- arrow come down -->
+                <div class="md:flex w-5/6 hidden justify-end">
+                  <img
+                    class="opacity-30"
+                    src="../assets/images/arrow.svg"
+                    alt="Arrow"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- trader-bg section -->
+            <div class="md:w-[50%] w-[90%] order-first md:order-1 mx-auto">
+              <img src="../assets/images/trader.svg" alt="Trader" />
+            </div>
+          </section>
+          <!-- #products -->
+          <section
+            class="w-full h-auto md:mb-10 pb-8 pt-2 md:pt-8 mb-10 gap-8 items-center flex flex-col bg-stone-50 mx-auto"
+          >
+            <!-- title -->
+            <div
+              class="flex w-full items-center justify-center md:mb-10 gap-2 md:gap-4 pt-6 mb-6 mx-auto"
+            >
+              <span
+                class="text-xl md:text-2xl font-extrabold text-sloganPrimary"
+                >محصولات</span
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2A2D53"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </div>
+            <!-- cards -->
+            <div class="px-4 md:px-8 mx-auto">
+              <div
+                class="flex flex-wrap items-center flex-col gap-y-14 md:gap-x-6 md:flex-row mx-auto"
+              >
+                <!-- card 1-->
+                <div
+                  class="min-w-[280px] rounded-lg mx-auto bg-white overflow-hidden shadow-md"
+                >
+                  <img
+                    class="w-full h-52 md:h-60"
+                    alt="product"
+                    src="../assets/images/pic.jpg"
+                  />
+                  <!-- title -->
+                  <div
+                    class="flex flex-col text-center md:p-4 min-h-[76px] md:min-h-[128px]"
+                  >
+                    <p class="text-base md:text-2xl font-semibold">
+                      النگوی درجه یک
+                    </p>
+                    <p
+                      class="py-1 px-2 md:p-2 text-black text-sm md:text-base text-opacity-70"
+                    >
+                      adjksjkdhg
+                    </p>
+                  </div>
+                  <!-- percentage / weight -->
+                  <div
+                    class="p-2 md:p-4 px-4 border-b flex flex-row items-center justify-between"
+                  >
+                    <p>وزن: <span>5</span></p>
+                    <p>درصد سود: <span>20</span>%</p>
+                  </div>
+                  <!-- price / buy -->
+                  <div
+                    class="md:p-2 p-1 flex flex-col justify-between items-center"
+                  >
+                    <p class="font-bold text-sm md:text-base">
+                      قیمت: <span>125,000,000</span> تومان
+                    </p>
+                    <button class="w-full block p-2">
+                      <a
+                        href="#"
+                        class="border-2 bg-sky-600 cursor-pointer p-3 w-full block rounded-md"
+                        >سفارش محصول</a
+                      >
+                    </button>
+                  </div>
+                </div>
+                <!-- card 2-->
+                <div
+                  class="min-w-[280px] rounded-lg mx-auto bg-white overflow-hidden shadow-md"
+                >
+                  <img
+                    class="w-full h-52 md:h-60"
+                    alt="product"
+                    src="../assets/images/pic.jpg"
+                  />
+                  <!-- title -->
+                  <div
+                    class="flex flex-col text-center md:p-4 min-h-[76px] md:min-h-[128px]"
+                  >
+                    <p class="text-base md:text-2xl font-semibold">
+                      النگوی درجه یک
+                    </p>
+                    <p
+                      class="py-1 px-2 md:p-2 text-black text-sm md:text-base text-opacity-70"
+                    >
+                      adjksjkdhg
+                    </p>
+                  </div>
+                  <!-- percentage / weight -->
+                  <div
+                    class="p-2 md:p-4 px-4 border-b flex flex-row items-center justify-between"
+                  >
+                    <p>وزن: <span>5</span></p>
+                    <p>درصد سود: <span>20</span>%</p>
+                  </div>
+                  <!-- price / buy -->
+                  <div
+                    class="md:p-2 p-1 flex flex-col justify-between items-center"
+                  >
+                    <p class="font-bold text-sm md:text-base">
+                      قیمت: <span>125,000,000</span> تومان
+                    </p>
+                    <button class="w-full block p-2">
+                      <a
+                        href="#"
+                        class="border-2 bg-sky-600 cursor-pointer p-3 w-full block rounded-md"
+                        >سفارش محصول</a
+                      >
+                    </button>
+                  </div>
+                </div>
+                <!-- card 3-->
+                <div
+                  class="min-w-[280px] rounded-lg mx-auto bg-white overflow-hidden shadow-md"
+                >
+                  <img
+                    class="w-full h-52 md:h-60"
+                    alt="product"
+                    src="../assets/images/pic.jpg"
+                  />
+                  <!-- title -->
+                  <div
+                    class="flex flex-col text-center md:p-4 min-h-[76px] md:min-h-[128px]"
+                  >
+                    <p class="text-base md:text-2xl font-semibold">
+                      النگوی درجه یک
+                    </p>
+                    <p
+                      class="py-1 px-2 md:p-2 text-black text-sm md:text-base text-opacity-70"
+                    >
+                      adjksjkdhg
+                    </p>
+                  </div>
+                  <!-- percentage / weight -->
+                  <div
+                    class="p-2 md:p-4 px-4 border-b flex flex-row items-center justify-between"
+                  >
+                    <p>وزن: <span>5</span></p>
+                    <p>درصد سود: <span>20</span>%</p>
+                  </div>
+                  <!-- price / buy -->
+                  <div
+                    class="md:p-2 p-1 flex flex-col justify-between items-center"
+                  >
+                    <p class="font-bold text-sm md:text-base">
+                      قیمت: <span>125,000,000</span> تومان
+                    </p>
+                    <button class="w-full block p-2">
+                      <a
+                        href="#"
+                        class="border-2 bg-sky-600 cursor-pointer p-3 w-full block rounded-md"
+                        >سفارش محصول</a
+                      >
+                    </button>
+                  </div>
+                </div>
+                <!-- card 4-->
+                <div
+                  class="min-w-[280px] rounded-lg mx-auto bg-white overflow-hidden shadow-md"
+                >
+                  <img
+                    class="w-full h-52 md:h-60"
+                    alt="product"
+                    src="../assets/images/pic.jpg"
+                  />
+                  <!-- title -->
+                  <div
+                    class="flex flex-col text-center md:p-4 min-h-[76px] md:min-h-[128px]"
+                  >
+                    <p class="text-base md:text-2xl font-semibold">
+                      النگوی درجه یک
+                    </p>
+                    <p
+                      class="py-1 px-2 md:p-2 text-black text-sm md:text-base text-opacity-70"
+                    >
+                      adjksjkdhg
+                    </p>
+                  </div>
+                  <!-- percentage / weight -->
+                  <div
+                    class="p-2 md:p-4 px-4 border-b flex flex-row items-center justify-between"
+                  >
+                    <p>وزن: <span>5</span></p>
+                    <p>درصد سود: <span>20</span>%</p>
+                  </div>
+                  <!-- price / buy -->
+                  <div
+                    class="md:p-2 p-1 flex flex-col justify-between items-center"
+                  >
+                    <p class="font-bold text-sm md:text-base">
+                      قیمت: <span>125,000,000</span> تومان
+                    </p>
+                    <button class="w-full block p-2">
+                      <a
+                        href="#"
+                        class="border-2 bg-sky-600 cursor-pointer p-3 w-full block rounded-md"
+                        >سفارش محصول</a
+                      >
+                    </button>
+                  </div>
+                </div>
+                <!-- card 5 -->
+                <div
+                  class="min-w-[280px] rounded-lg mx-auto bg-white overflow-hidden shadow-md"
+                >
+                  <img
+                    class="w-full h-52 md:h-60"
+                    alt="product"
+                    src="../assets/images/pic.jpg"
+                  />
+                  <!-- title -->
+                  <div
+                    class="flex flex-col text-center md:p-4 min-h-[76px] md:min-h-[128px]"
+                  >
+                    <p class="text-base md:text-2xl font-semibold">
+                      النگوی درجه یک
+                    </p>
+                    <p
+                      class="py-1 px-2 md:p-2 text-black text-sm md:text-base text-opacity-70"
+                    >
+                      adjksjkdhg
+                    </p>
+                  </div>
+                  <!-- percentage / weight -->
+                  <div
+                    class="p-2 md:p-4 px-4 border-b flex flex-row items-center justify-between"
+                  >
+                    <p>وزن: <span>5</span></p>
+                    <p>درصد سود: <span>20</span>%</p>
+                  </div>
+                  <!-- price / buy -->
+                  <div
+                    class="md:p-2 p-1 flex flex-col justify-between items-center"
+                  >
+                    <p class="font-bold text-sm md:text-base">
+                      قیمت: <span>125,000,000</span> تومان
+                    </p>
+                    <button class="w-full block p-2">
+                      <a
+                        href="#"
+                        class="border-2 bg-sky-600 cursor-pointer p-3 w-full block rounded-md"
+                        >سفارش محصول</a
+                      >
+                    </button>
+                  </div>
+                </div>
+                <!-- card 6 -->
+                <div
+                  class="min-w-[280px] rounded-lg mx-auto bg-white overflow-hidden shadow-md"
+                >
+                  <img
+                    class="w-full h-52 md:h-60"
+                    alt="product"
+                    src="../assets/images/pic.jpg"
+                  />
+                  <!-- title -->
+                  <div
+                    class="flex flex-col text-center md:p-4 min-h-[76px] md:min-h-[128px]"
+                  >
+                    <p class="text-base md:text-2xl font-semibold">
+                      النگوی درجه یک
+                    </p>
+                    <p
+                      class="py-1 px-2 md:p-2 text-black text-sm md:text-base text-opacity-70"
+                    >
+                      adjksjkdhg
+                    </p>
+                  </div>
+                  <!-- percentage / weight -->
+                  <div
+                    class="p-2 md:p-4 px-4 border-b flex flex-row items-center justify-between"
+                  >
+                    <p>وزن: <span>5</span></p>
+                    <p>درصد سود: <span>20</span>%</p>
+                  </div>
+                  <!-- price / buy -->
+                  <div
+                    class="md:p-2 p-1 flex flex-col justify-between items-center"
+                  >
+                    <p class="font-bold text-sm md:text-base">
+                      قیمت: <span>125,000,000</span> تومان
+                    </p>
+                    <button class="w-full block p-2">
+                      <a
+                        href="#"
+                        class="border-2 bg-sky-600 cursor-pointer p-3 w-full block rounded-md"
+                        >سفارش محصول</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- table section -->
+          <section
+            class="w-full pb-6 md:pb-10 rounded-md md:pt-5 -z-10 flex md:flex-row flex-col"
+          >
+            <!-- #heading -->
+            <div
+              class="md:w-1/4 w-full flex md:flex-col flex-row p-6 md:p-10 justify-center md:gap-y-5 gap-x-5 items-center"
+            >
+              <div class="flex flex-row md:flex-col items-center">
+                <h2
+                  class="md:text-[64px] text-[48px] order-1 text-sloganPrimary font-extrabold"
+                >
+                  تابلو
+                </h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#2A2D53"
+                  class="w-8 h-10 md:hidden"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3"
+                  />
+                </svg>
+              </div>
+              <span
+                class="text-[10px] sm:text-[12px] mt-10 md:mt-0 md:text-[14px]"
+                >قیمت ها به روز <br />
+                و براساس تومان میباشد</span
+              >
+            </div>
+            <!-- #table -->
+            <div class="relative p-2 w-full">
+              <table class="leading-normal shadow-xl w-3/4 md:w-4/6 mx-auto">
+                <thead>
+                  <tr
+                    class="border-b-2 bg-gray-800 rounded-t-md flex w-full items-center justify-between"
+                  >
+                    <th
+                      class="md:px-5 px-3 py-2 sm:text-[22px] border-gray-200 text-[16px] font-extrabold text-white"
+                    >
+                      انواع <span class="text-yellow-400">طلا</span>
+                    </th>
+                    <th
+                      class="md:px-5 px-2 py-2 ml-5 sm:text-[22px] border-gray-200 text-[16px] font-extrabold text-white"
+                    >
+                      قیمت
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="w-full">
+                  <!-- item #1 -->
+                  <tr
+                    class="flex w-full bg-white items-center border-b-2 justify-between"
+                  >
+                    <!-- table items row title -->
+                    <td class="px-2 md:px-5 sm:py-3 py-1.5 text-sm w-full">
+                      <div class="flex items-center">
+                        <p
+                          class="text-gray-900 text-[10px] sm:text-[16px] md:text-[18px]"
+                        >
+                          طلای 18 عیار
+                        </p>
+                      </div>
+                    </td>
+                    <!-- table row price -->
+                    <td
+                      class="px-2 md:px-5 py-1.5 sm:py-3 border-gray-200 bg-white text-sm"
+                    >
+                      <span
+                        class="relative inline-block px-3 py-1 font-semibold text-red-900 leading-tight"
+                      >
+                        <span
+                          aria-hidden
+                          class="absolute inset-0 bg-red-200 opacity-50 rounded-full"
+                        ></span>
+                        <span
+                          class="relative font-medium text-[10px] sm:text-[16px] md:text-[18px]"
+                          >12,500,000</span
+                        >
+                      </span>
+                    </td>
+                  </tr>
+                  <!-- item #2 -->
+                  <tr
+                    class="flex w-full bg-white items-center border-b-2 justify-between"
+                  >
+                    <!-- table items row title -->
+                    <td class="px-2 md:px-5 sm:py-3 py-1.5 text-sm w-full">
+                      <div class="flex items-center">
+                        <p
+                          class="text-gray-900 text-[10px] sm:text-[16px] md:text-[18px]"
+                        >
+                          طلای 24 عیار
+                        </p>
+                      </div>
+                    </td>
+                    <!-- table row price -->
+                    <td
+                      class="px-2 md:px-5 sm:py-3 py-1.5 border-gray-200 bg-white text-sm"
+                    >
+                      <span
+                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight"
+                      >
+                        <span
+                          aria-hidden
+                          class="absolute inset-0 bg-green-200 opacity-50 rounded-full"
+                        ></span>
+                        <span
+                          class="relative font-medium text-[10px] sm:text-[16px] md:text-[18px]"
+                          >12,500,000</span
+                        >
+                      </span>
+                    </td>
+                  </tr>
+                  <!-- item #3 -->
+                  <tr
+                    class="flex w-full bg-white items-center border-b-2 justify-between"
+                  >
+                    <!-- table items row title -->
+                    <td class="px-2 md:px-5 sm:py-3 py-1.5 text-sm w-full">
+                      <div class="flex items-center">
+                        <p
+                          class="text-gray-900 text-[10px] sm:text-[16px] md:text-[18px]"
+                        >
+                          سکه جدید
+                        </p>
+                      </div>
+                    </td>
+                    <!-- table row price -->
+                    <td
+                      class="px-2 md:px-5 sm:py-3 py-1.5 border-gray-200 bg-white text-sm"
+                    >
+                      <span
+                        class="relative inline-block px-3 py-1 font-semibold text-red-900 leading-tight"
+                      >
+                        <span
+                          aria-hidden
+                          class="absolute inset-0 bg-red-200 opacity-50 rounded-full"
+                        ></span>
+                        <span
+                          class="relative font-medium text-[10px] sm:text-[16px] md:text-[18px]"
+                          >12,500,000</span
+                        >
+                      </span>
+                    </td>
+                  </tr>
+                  <!-- item #4 -->
+                  <tr
+                    class="flex w-full bg-white items-center border-b-2 justify-between"
+                  >
+                    <!-- table items row title -->
+                    <td class="px-2 md:px-5 sm:py-3 py-1.5 text-sm w-full">
+                      <div class="flex items-center">
+                        <p
+                          class="text-gray-900 text-[10px] sm:text-[16px] md:text-[18px]"
+                        >
+                          سکه قدیم
+                        </p>
+                      </div>
+                    </td>
+                    <!-- table row price -->
+                    <td
+                      class="px-2 md:px-5 sm:py-3 py-1.5 border-gray-200 bg-white text-sm"
+                    >
+                      <span
+                        class="relative inline-block px-3 py-1 font-semibold text-red-900 leading-tight"
+                      >
+                        <span
+                          aria-hidden
+                          class="absolute inset-0 bg-red-200 opacity-50 rounded-full"
+                        ></span>
+                        <span
+                          class="relative font-medium text-[10px] sm:text-[16px] md:text-[18px]"
+                          >12,500,000</span
+                        >
+                      </span>
+                    </td>
+                  </tr>
+                  <!-- item #5 -->
+                  <tr
+                    class="flex w-full bg-white items-center border-b-2 justify-between"
+                  >
+                    <!-- table items row title -->
+                    <td class="px-2 md:px-5 sm:py-3 py-1.5 text-sm w-full">
+                      <div class="flex items-center">
+                        <p
+                          class="text-gray-900 text-[10px] sm:text-[16px] md:text-[18px]"
+                        >
+                          نیم سکه
+                        </p>
+                      </div>
+                    </td>
+                    <!-- table row price -->
+                    <td
+                      class="px-2 md:px-5 sm:py-3 py-1.5 border-gray-200 bg-white text-sm"
+                    >
+                      <span
+                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight"
+                      >
+                        <span
+                          aria-hidden
+                          class="absolute inset-0 bg-green-200 opacity-50 rounded-full"
+                        ></span>
+                        <span
+                          class="relative font-medium text-[10px] sm:text-[16px] md:text-[18px]"
+                          >12,500,000</span
+                        >
+                      </span>
+                    </td>
+                  </tr>
+                  <!-- item #6 -->
+                  <tr
+                    class="flex w-full bg-white items-center border-b-2 justify-between"
+                  >
+                    <!-- table items row title -->
+                    <td class="px-2 md:px-5 sm:py-3 py-1.5 text-sm w-full">
+                      <div class="flex items-center">
+                        <p
+                          class="text-gray-900 text-[10px] sm:text-[16px] md:text-[18px]"
+                        >
+                          ربع سکه
+                        </p>
+                      </div>
+                    </td>
+                    <!-- table row price -->
+                    <td
+                      class="px-2 md:px-5 sm:py-3 py-1.5 border-gray-200 bg-white text-sm"
+                    >
+                      <span
+                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight"
+                      >
+                        <span
+                          aria-hidden
+                          class="absolute inset-0 bg-green-200 opacity-50 rounded-full"
+                        ></span>
+                        <span
+                          class="relative font-medium text-[10px] sm:text-[16px] md:text-[18px]"
+                          >12,500,000</span
+                        >
+                      </span>
+                    </td>
+                  </tr>
+                  <!-- item #7 -->
+                  <tr class="flex w-full bg-white items-center justify-between">
+                    <!-- table items row title -->
+                    <td class="px-2 md:px-5 sm:py-3 py-1.5 text-sm w-full">
+                      <div class="flex items-center">
+                        <p
+                          class="text-gray-900 text-[10px] sm:text-[16px] md:text-[18px]"
+                        >
+                          سکه گرمی
+                        </p>
+                      </div>
+                    </td>
+                    <!-- table row price -->
+                    <td
+                      class="px-2 md:px-5 sm:py-3 py-1.5 border-gray-200 bg-white text-sm"
+                    >
+                      <span
+                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight"
+                      >
+                        <span
+                          aria-hidden
+                          class="absolute inset-0 bg-green-200 opacity-50 rounded-full"
+                        ></span>
+                        <span
+                          class="relative font-medium text-[10px] sm:text-[16px] md:text-[18px]"
+                          >12,500,000</span
+                        >
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <!-- about me -->
+          <section
+            id="about-me"
+            class="mx-auto border-4 items-center gap-4 px-4 w-full md:flex-row-reverse flex flex-col-reverse"
+          >
+            <div class="">
+              <h3>امیر حسین نعناکار هستم</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                ipsa quam vero ratione soluta asperiores provident est expedita
+                cumque deleniti.
+              </p>
+            </div>
+            <div class="md:w-1/2">
+              <img src="../assets/images/trader.svg" alt="" />
+            </div>
+          </section>
+        </main>
+        <footer
+          class="mx-auto md:mt-16 mt-6 w-full bg-gray-200 flex flex-col md:flex-row items-center justify-center gap-12 md:p-5"
+        >
+          <!-- footer logo -->
+          <div class="md:w-1/3 w-full flex flex-col gap-2">
+            <img class="w-20" src="../assets/images/mainlogo.png" alt="logo" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Exercitationem sapiente neque in maiores. Quas, id. Exercitationem
+              quisquam qui minima expedita, fugiat, dolore quibusdam delectus
+              odio inventore magni deserunt iste eligendi vel tempora quod velit
+              magnam odit provident illum voluptatibus consequuntur.
+            </p>
+          </div>
+          <!-- Site sections -->
+          <div
+            class="flex w-full md:w-auto p-4 md:p-0 flex-col gap-2"
+          >
+            <div class="">
+              <span class="list-outside text-xl text-gray-600"
+                >بخش های سایت</span
+              >
+            </div>
+            <div class="">
+              <ul class="text-gray-500 text-base">
+                <li class="list-inside list-disc marker:text-xs">
+                  <a href="">خانه</a>
+                </li>
+              </ul>
+              <ul class="text-gray-500 text-base">
+                <li class="list-inside list-disc marker:text-xs">
+                  <a href="">محصولات</a>
+                </li>
+              </ul>
+              <ul class="text-gray-500 text-base">
+                <li class="list-inside list-disc marker:text-xs">
+                  <a href="">تابلو</a>
+                </li>
+              </ul>
+              <ul class="text-gray-500 text-base">
+                <li class="list-inside list-disc marker:text-xs">
+                  <a href="">درباره من</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- footer icons -->
+          <div class="flex flex-row md:gap-8">
+            <!-- telegram -->
+            <div class="flex flex-col gap-1 items-center justify-center">
+              <img class="" src="../assets/images/Telegram.svg" alt="" />
+              <a href="#" target="_blank">
+                <span>Telegram</span>
+              </a>
+            </div>
+            <!-- whats app -->
+            <div class="flex flex-col gap-1 items-center justify-center">
+              <img src="../assets/images/WhatsApp.svg" alt="WhatsApp" />
+              <a href="#" target="_blank">
+                <span>Whats App</span>
+              </a>
+            </div>
+            <!-- instagram -->
+            <div class="flex flex-col gap-1 items-center justify-center">
+              <img
+                class="text-center"
+                src="../assets/images/Instagram.svg"
+                alt="instagram"
+              />
+              <a href="#" target="_blank">
+                <span>Instagram</span>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="../src/js/script.js"></script>
+  </body>
+</html>
+
+<!-- <footer class="container w-full mx-auto flex flex-row items-center justify-between bg-orange-500">
+          <div class="">
+            <a href="#">
+              <img src="" alt="" />
+              <span>Telegram</span>
+            </a>
+            <a href="#">
+              <img src="" alt="" />
+              <span>Instagram</span>
+            </a>
+            <a href="#">
+              <img src="" alt="" />
+              <span>Whats App</span>
+            </a>
+          </div>
+          <div class="">
+            <span>بخش های سایت</span>
+            <div class="">
+              <a href="#">خانه</a>
+              <a href="#">تابلو </a>
+              <a href="#">محصولات</a>
+              <a href="#">درباره من/a>
+            </div>
+          </div>
+          <div class="w-1/3 bg-slate-50">
+            <img src="../assets/images/mainlogo.png" alt="logo">
+            <h3>من امیر حسین نعناکار هستم</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam assumenda accusantium tempore? Distinctio vel molestiae quaerat placeat molestias soluta tenetur enim error, iure impedit adipisci quis dolorum pariatur accusamus? Magnam nisi maxime veniam eum quibusdam inventore voluptate iusto rem enim!</p>
+          </div>
+        </footer> -->
